@@ -1,0 +1,11 @@
+<html>
+    <head><title>トップページ</title></head>
+    <body>
+        <h1>ランダム百人一首 検索文字: {{ letter }}</h1>
+        <ul>
+        {% for x in rows %}
+            <li>{{ x.sakusya }}: {{ x.kami }} {{ x.simo }}</li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
